@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/andy/boostrap_bp/css/less'
+let g:netrw_dirhist_2='/Users/andy/boostrap_bp'
+let g:netrw_dirhist_3='/Users/andy/Desktop/h5bp_bootstrap'
+let g:netrw_dirhist_4='/Users/andy/sites/4momsOnline'
+let g:netrw_dirhist_5='/Users/andy/Downloads/markevans-dragonfly-76bc7f1'
+let g:netrw_dirhist_6='/Users/andy/.ssh'
+let g:netrw_dirhist_7='/Users/andy/code/hyde'
+let g:netrw_dirhist_8='/Users/andy/code/wordpress'
