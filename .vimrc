@@ -3,32 +3,22 @@ filetype plugin indent on
 colorscheme idlefingers
 
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
-map <silent> <LocalLeader>4 :cd Sites/4momsOnline<CR>
 map <silent> <LocalLeader>e :call HtmlEscape()<CR>
 map <silent> <LocalLeader>c :call Align()<CR>
 map <silent># :s/^/#/<CR>
 
 :inoremap zz <Esc>
 
-:set hidden
-:set number
-:set ts=2
-:set sts=2
-:set shiftwidth=2
+set hidden
+set number
+set expandtab
+set tabstop=2
+set sts=2
+set shiftwidth=2
 syntax on
-filetype plugin indent on
 colorscheme idlefingers
 
-map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
-map <silent> <LocalLeader>4 :cd Sites/4momsOnline<CR>
-map <silent> <LocalLeader>e :call HtmlEscape()<CR>
-map <silent> <LocalLeader>c :call Align()<CR>
-:inoremap zz <Esc>
 
-:set hidden
-:set number
-:set ts=2
-:set sts=2
 :set guifont=Menlo:h11.00
 :au FocusLost * :wa
 
@@ -46,17 +36,7 @@ let g:CommandTMaxFiles=40000
 :set backupdir=~/.backup,.,/tmp
 :set backupdir=~/.backup,.,/tmp
 
-set rnu
-:match Search /\%(\_^\s*\)\@<=\%(\%1v\|\%5v\|\%9v\)\s/
-:match Search /\S\zs[\t ]\+\%#\@!$/
-call matchadd('Error', '')
 
-" runtime macros/matchit.vim
-fun! HighlightWhitespaceErrors()
-" trailing whitespace, except for the current cursor position
-" tabs anywhere but leading
-endf
-au BufNewFile,BufRead * call HighlightWhitespaceErrors()
 
 function HtmlEscape()
   silent s/&/\&amp;/eg
