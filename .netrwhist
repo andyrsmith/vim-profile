@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/andy/sites/qMoms/spec'
 let g:netrw_dirhist_2='/Users/andy/.vim'
+let g:netrw_dirhist_3='/Users/andy/code/dragonfox/app/views/pages/mamaroo'
+let g:netrw_dirhist_4='/Users/andy/code/dragonfox'
+let g:netrw_dirhist_5='/Users/andy/code/aardmark/app/models'
+let g:netrw_dirhist_6='/Users/andy/code/carmen/spec/controllers'

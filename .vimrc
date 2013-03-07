@@ -1,13 +1,7 @@
-syntax on
-filetype plugin indent on
-colorscheme idlefingers
-
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>e :call HtmlEscape()<CR>
 map <silent> <LocalLeader>c :call Align()<CR>
 map <silent># :s/^/#/<CR>
-
-:inoremap zz <Esc>
 
 set hidden
 set number
@@ -17,26 +11,6 @@ set sts=2
 set shiftwidth=2
 syntax on
 colorscheme idlefingers
-
-
-:set guifont=Menlo:h11.00
-:au FocusLost * :wa
-
-if has("gui_running")
-set guioptions=egmrt
-endif
-
-let g:CommandTMaxFiles=40000
-:set wildignore+=vendor/**
-:set wildignore+=public/images
-:set wildignore+=*.png
-:set wildignore+=*.jpg
-:set wildignore+=*.gif
-
-:set backupdir=~/.backup,.,/tmp
-:set backupdir=~/.backup,.,/tmp
-
-
 
 function HtmlEscape()
   silent s/&/\&amp;/eg
